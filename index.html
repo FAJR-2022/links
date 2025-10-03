@@ -44,14 +44,10 @@
     }
 
     .whatsapp {
-      /* يمكنك تخصيص لون مختلف هنا إذا أردت */
-      /* background-color: #25D366; */
       color: #556B2F !important;
     }
 
     .snapchat {
-      /* يمكنك تخصيص لون مختلف هنا إذا أردت */
-      /* background-color: #FFFC00; */
       color: #556B2F !important;
     }
 
@@ -59,20 +55,31 @@
       color: #FFF176; /* لمسات أصفر فاتح */
     }
 
+    /* الشعار مع خلفية بيبي بينك */
+    .logo-container {
+      width: 150px;
+      height: 150px;
+      background-color: #FFC0CB; /* البيبي بينك الموحد */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px; /* اختياري حسب التصميم */
+      margin: 40px auto 20px auto;
+    }
+
     .logo {
-      margin: 40px 0 20px 0; /* مسافة قبل وبعد الشعار */
-      width: 150px; /* حجم الشعار */
-      
-      /* التعديل الوحيد: جعل لون الشعار #FFC0CB */
-      filter: brightness(0) saturate(100%) invert(94%) sepia(21%) saturate(6015%) hue-rotate(-315deg) brightness(1) contrast(1);
+      width: 80%; /* حجم الشعار داخل الخلفية */
+      height: auto;
     }
   </style>
 </head>
 <body>
 
   <!-- شعار المتجر -->
-  <img src="logo.png" alt="شعار المتجر" class="logo">
- 
+  <div class="logo-container">
+    <img src="logo.png" alt="شعار المتجر" class="logo">
+  </div>
+
   <!-- البيانات الأصلية -->
   <h1>Fajr's Delights</h1>
   <p class="highlight">صُنع بعناية لتجربة لاتُنسى</p>
@@ -85,4 +92,3 @@
 
 </body>
 </html>
-
