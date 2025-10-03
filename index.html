@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: georgia, sans-serif;
-      background-color: #556B2F; /* خلفية زيتي */
+      background-color: #556B2F; /* خلفية زيتي للجسم */
       color: #ffffff;
       text-align: center;
       padding: 50px 20px;
@@ -55,21 +55,24 @@
       color: #FFF176; /* لمسات أصفر فاتح */
     }
 
-    /* الشعار مع خلفية بيبي بينك */
+    /* الشعار مع الخلفية بيبي بينك واللوجو زيتي */
     .logo-container {
       width: 150px;
       height: 150px;
-      background-color: #FFC0CB; /* البيبي بينك الموحد */
+      background-color: #FFC0CB; /* البيبي بينك */
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 10px; /* اختياري حسب التصميم */
+      border-radius: 10px; 
       margin: 40px auto 20px auto;
     }
 
     .logo {
-      width: 80%; /* حجم الشعار داخل الخلفية */
+      width: 80%;
       height: auto;
+
+      /* تحويل الشعار الأبيض للون الزيتي #556B2F */
+      filter: invert(26%) sepia(46%) saturate(480%) hue-rotate(70deg) brightness(95%) contrast(90%);
     }
   </style>
 </head>
@@ -77,7 +80,7 @@
 
   <!-- شعار المتجر -->
   <div class="logo-container">
-    <img src="logo.png" alt="شعار المتجر" class="logo">
+    <img src="logo_white.png" alt="شعار المتجر" class="logo">
   </div>
 
   <!-- البيانات الأصلية -->
